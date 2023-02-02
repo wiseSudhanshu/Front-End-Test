@@ -326,3 +326,80 @@ footer {
     font-size: 2em;
     margin-left: 0.7em;
 }
+
+@media screen and (max-width: 1092px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        margin: 6px 0;
+    }
+    .navbar {
+        height: 0;
+        position: absolute;
+        top: 4.6em;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #EF2A82;
+        transition: 0.3s;
+        overflow: hidden;
+    }
+    .navbar.active {
+        border-top: 0.5px solid #fff;
+        height: 140px;
+    }
+    .hamburger.active .line:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .line:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    .hamburger.active .line:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+    .navbar ul {
+        display: block;
+        width: fit-content;
+        margin: 20px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .navbar.active ul {
+        opacity: 1;
+    }
+    .nav-link {
+        margin-bottom: 12px;
+    }
+    .hero {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 2em 15%;
+    }
+    .hero-image {
+        margin-bottom: 3em;
+    }
+    .convert {
+        width: 45%;
+    }
+    .container {
+        flex-wrap: wrap;
+    }
+    .card {
+        margin: 1.2em;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    footer {
+        justify-content: center;
+    }
+    .social-icons {
+        display: none;
+    }
+}
