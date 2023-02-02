@@ -297,3 +297,32 @@ nav {
     display: flex;
     margin: 1.3em 0.7em;
 }
+
+footer {
+    margin-top: 2%;
+    background: linear-gradient(210deg, #f587c7 30%, #EF2A82);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 10%;
+}
+
+.footer-logo {
+    height: 2.5em;
+    width: 2.5em;
+}
+
+.navbar-brand-footer {
+    color: #fff;
+    margin-left: 0.7em;
+    letter-spacing: 0.2em;
+    font-size: 1.5em;
+    font-weight: 900;
+    font-family: 'Aboreto', cursive;
+}
+
+.fa-brands {
+    color: black;
+    font-size: 2em;
+    margin-left: 0.7em;
+}
